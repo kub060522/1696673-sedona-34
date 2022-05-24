@@ -7,10 +7,10 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header-logo" href="#"><img src="#" alt="sedona logo" width="139" height="70"></a>
+  <header class="header">
+    <a class="header-logo" href="#"><img src="#" alt="sedona logo." width="139" height="70"></a>
     <nav class="navigation">
-      <ul class="navigation-list">
+      <ul class="navigation-site">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
         </li>
@@ -18,10 +18,10 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
         </li>
@@ -35,6 +35,33 @@
     </nav>
   </header>
 
+  <main class="hotels">
+    <h1 class="visually-hidden">Гостиницы</h1>
+    <section class="hotels-filter">
+      <header class="hotels-filter-header">
+        <h2 class="hotels-filter-title">Гостинницы Седоны</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+      <section class="hotels-filter-catalog">
+        <h2 class="visually-hidden">Каталог гостиниц</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+
+          <div class="hotels-filter-button">
+            <button class="button-submit" type="submit">Применить</button>
+            <button class="button-reset" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+
   <section class="subscribe">
     <h2 class="visually-hidden">Подписка на рассылку</h2>
     <p>Подпишитесь на рассылку</p>
@@ -42,15 +69,12 @@
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden" for="subscribe-email">email</label>
       <input class="" type="email" placeholder="email@example.com" name="subscribe-email" id="subscribe-email" required>
-      <button class="button subscribe-button" type="submit">
-        <span class="visually-hidden">Подписаться</span>
-      </button>
+      <button class="subscribe-button" type="submit">Подписаться</button>
     </form>
   </section>
 
-  <footer class="page-footer">
+  <footer class="footer">
     <h2 class="visually-hidden">Контакты</h2>
-
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="footer-social-link" href="https://vk.com/htmlacademy">
@@ -68,14 +92,12 @@
         </a>
       </li>
     </ul>
-
     <p><a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
-
     <p><a class="footer-logo" href="https://htmlacademy.ru/">
-        <img class="footer-logo" src="#" alt="html academy logo" width="115" height="33">
+        <img class="footer-logo" src="#" alt="html academy logo." width="115" height="33">
       </a></p>
-
   </footer>
+
 </body>
 
 </html>
