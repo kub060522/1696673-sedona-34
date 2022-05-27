@@ -8,7 +8,7 @@
 
 <body>
   <header class="header">
-    <a class="header-logo" href="index.html"><img src="images/logo.svg" alt="sedona logo." width="139" height="70"></a>
+    <a class="header-logo" href="index.html"><img class="header-logo-img" src="images/logo.svg" alt="sedona logo." width="139" height="70"></a>
     <nav class="navigation">
       <ul class="navigation-site">
         <li class="navigation-item">
@@ -142,16 +142,16 @@
           <h3 class="visually-hidden">Показ гостиниц</h3>
           <ul class="show-list">
             <li class="show-item">
-              <img src="images/Amara-Resort.jpg" alt="Hotel Amara Resort." width="300" height="211">
+              <img class="hotel-show-img" src="images/Amara-Resort.jpg" alt="Hotel Amara Resort." width="300" height="211">
             </li>
             <li class="show-item">
-              <img src="images/Villas-at-Poco.jpg" alt="Hotel Villas at Poco." width="300" height="211">
+              <img class="hotel-show-img" src="images/Villas-at-Poco.jpg" alt="Hotel Villas at Poco." width="300" height="211">
             </li>
             <li class="show-item">
-              <img src="images/Desert-Quail-Inn.jpg" alt="Hotel Desert Quail Inn." width="300" height="211">
+              <img class="hotel-show-img" src="images/Desert-Quail-Inn.jpg" alt="Hotel Desert Quail Inn." width="300" height="211">
             </li>
             <li class="show-item">
-              <img src="images/Green-Tree-Inn.jpg" alt="Hotel Green Tree Inn." width="300" height="211">
+              <img class="hotel-show-img" src="images/Green-Tree-Inn.jpg" alt="Hotel Green Tree Inn." width="300" height="211">
             </li>
           </ul>
         </section>
@@ -190,18 +190,17 @@
     </section>
   </main>
 
-  <section class="subscribe">
-    <h2 class="visually-hidden">Подписка на рассылку</h2>
-    <p>Подпишитесь на рассылку</p>
-    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="visually-hidden" for="subscribe-email">email</label>
-      <input class="" type="email" placeholder="email@example.com" name="subscribe-email" id="subscribe-email" required>
-      <button class="subscribe-button" type="submit">Подписаться</button>
-    </form>
-  </section>
-
   <footer class="footer">
+    <section class="subscribe">
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
+      <p>Подпишитесь на рассылку</p>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="subscribe-email">email</label>
+        <input class="" type="email" placeholder="email@example.com" name="subscribe-email" id="subscribe-email" required>
+        <button class="subscribe-button" type="submit">Подписаться</button>
+      </form>
+    </section>
     <h2 class="visually-hidden">Контакты</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
@@ -222,7 +221,7 @@
     </ul>
     <p><a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
     <p><a class="footer-logo" href="https://htmlacademy.ru/">
-        <img class="footer-logo" src="images/HTML Academy.svg" alt="html academy logo." width="115" height="33">
+        <img class="footer-logo-img" src="images/HTML Academy.svg" alt="html academy logo." width="115" height="33">
       </a></p>
   </footer>
 
