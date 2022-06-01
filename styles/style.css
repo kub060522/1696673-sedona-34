@@ -47,7 +47,7 @@ body {
   background-color: #756157;
 }
 
-/* Текст main -> hero файл index.html */
+/* Текст hero файл index.html */
 
 .hero-city-paragraph {
   font-weight: 700;
@@ -295,4 +295,29 @@ body {
 
 .pagination-label {
   color: #333333;
+}
+
+/* Подключение фоновых изображений */
+.hero {
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #333333;
+  color: #000000;
+}
+
+.subscribe-index {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hotels-filter {
+  background-image: url(../images/catalog-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #000000;
+  color: #ffffff;
 }
