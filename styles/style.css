@@ -14,7 +14,13 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -22,6 +28,16 @@ body {
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main, .hotels {
+  flex-grow: 1;
 }
 
 /* Текст в шапке index.html и hotels.html */
