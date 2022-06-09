@@ -1,0 +1,21 @@
+
+
+.header {
+    outline: #1e2527 solid 1px;
+}
+
+  .navigation{
+  outline: #FF0000 solid 1px;
+}
+
+.header-logo {
+  outline: #ffd900 solid 1px;
+}
+
+.navigation-site {
+  outline: #00ff00 solid 1px;
+}
+
+.navigation-user {
+  outline: #0000ff solid 1px;
+}
