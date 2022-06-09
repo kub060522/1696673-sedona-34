@@ -362,3 +362,8 @@ body {
   padding: 0;
   width: 264px;
 }
+
+.hero-welcome {
+  display: block;
+  margin: 0 auto;
+}
