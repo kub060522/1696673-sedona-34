@@ -352,3 +352,15 @@ body {
 .navigation-logo {
   margin-right: 30px;
 }
+
+.navigation-site {
+  margin: 0 auto 0 0;
+  padding: 0;
+  width: 390px;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  width: 264px;
+}
