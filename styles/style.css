@@ -67,9 +67,9 @@ body {
   background-color: #756157;
 }
 
-/* Текст hero файл index.html */
+/* Текст main -> advantages файл index.html */
 
-.hero-city-paragraph {
+.advantages-city-paragraph {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -77,14 +77,12 @@ body {
   text-transform: uppercase;
 }
 
-.hero-reason-paragraph {
+.advantages-reason-paragraph {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
 }
-
-/* Текст main -> advantages файл index.html */
 
 .advantages-title {
   font-weight: 700;
