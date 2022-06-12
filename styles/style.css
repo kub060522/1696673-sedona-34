@@ -90,6 +90,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .advantages-white {
@@ -99,10 +100,12 @@ body {
 
 .advantages-number {
   text-align: center;
+  margin: 0;
 }
 
 .advantages-paragraph {
   text-align: center;
+  margin: 0;
 }
 
 .advantages-dark {
@@ -387,4 +390,29 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   width: 720px;
+}
+
+.advantages-unorder-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item-div {
+  display: flex;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item-unorder {
+  width: 400px;
+}
+
+.advantages-div-number {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
