@@ -51,26 +51,30 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p class="advantages-city-paragraph">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
         <p class="advantages-reason-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ol class="advantages-list">
+        <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title advantages-white">Настоящий городок</h3>
-            <p class="advantages-number advantages-white">— №1 —</p>
-            <p class="advantages-paragraph advantages-white">Седона — не аттракцион для<br>туристов, там течёт
-              своя<br>жизнь</p>
-            <img class="advantage-sedona-street" src="images/sedona-street.jpg" alt="Улица в Седоне." width="800"
-              height="384">
+            <div class="advantages-item-div">
+              <div class="advantages-div-number">
+                <h3 class="advantages-title advantages-white">Настоящий городок</h3>
+                <p class="advantages-number advantages-white">— №1 —</p>
+                <p class="advantages-paragraph advantages-white">Седона — не аттракцион для<br>туристов, там течёт
+                  своя<br>жизнь</p>
+              </div>
+              <img class="advantage-sedona-street" src="images/sedona-street.jpg" alt="Улица в Седоне." width="800"
+                height="384">
+            </div>
             <ul class="advantages-unorder-list">
-              <li class="advantages-item">
+              <li class="advantages-item-unorder">
                 <h3 class="advantages-title">Жильё</h3>
                 <p class="advantages-paragraph advantages-dark">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в
                   кино!</p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item-unorder">
                 <h3 class="advantages-title">Еда</h3>
                 <p class="advantages-paragraph advantages-dark">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
                   разочаруетесь!</p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item-unorder">
                 <h3 class="advantages-title">Сувениры</h3>
                 <p class="advantages-paragraph advantages-dark">Не только китайского,<br>но и настоящего
                   местного<br>производства!</p>
@@ -78,29 +82,35 @@
             </ul>
           </li>
           <li class="advantages-item">
-            <img class="advantage-sedona-bridge" src="images/sedona-bridge.jpg" alt="Мост в Седоне." width="800"
-              height="384">
-            <h3 class="advantages-title advantages-white">Там есть мост дьявола</h3>
-            <p class="advantages-number advantages-white">— №2 —</p>
-            <p class="advantages-paragraph advantages-white">Да, по нему можно пройти!<br>Если вы
-              осмелитесь,<br>разумеется</p>
+            <div class="advantages-item-div">
+              <img class="advantage-sedona-bridge" src="images/sedona-bridge.jpg" alt="Мост в Седоне." width="800"
+                height="384">
+              <div class="advantages-div-number">
+                <h3 class="advantages-title advantages-white">Там есть мост дьявола</h3>
+                <p class="advantages-number advantages-white">— №2 —</p>
+                <p class="advantages-paragraph advantages-white">Да, по нему можно пройти!<br>Если вы
+                  осмелитесь,<br>разумеется</p>
+              </div>
+            </div>
+            <ul class="advantages-unorder-list">
+              <li class="advantages-item-unorder">
+                <h3 class="advantages-title">Небольшая<br>площадь</h3>
+                <p class="advantages-number">— №3 —</p>
+                <p class="advantages-paragraph advantages-dark">Все достопримечательности<br>находятся очень близко</p>
+              </li>
+              <li class="advantages-item-unorder">
+                <h3 class="advantages-title">Красивая<br>дорога</h3>
+                <p class="advantages-number">— №4 —</p>
+                <p class="advantages-paragraph advantages-dark">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+              </li>
+              <li class="advantages-item-unorder">
+                <h3 class="advantages-title">Мало<br>туристов</h3>
+                <p class="advantages-number">— №5 —</p>
+                <p class="advantages-paragraph advantages-dark">Большинство едет в Гранд<br>Каньон и толпится там</p>
+              </li>
+            </ul>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Небольшая<br>площадь</h3>
-            <p class="advantages-number">— №3 —</p>
-            <p class="advantages-paragraph advantages-dark">Все достопримечательности<br>находятся очень близко</p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Красивая<br>дорога</h3>
-            <p class="advantages-number">— №4 —</p>
-            <p class="advantages-paragraph advantages-dark">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Мало<br>туристов</h3>
-            <p class="advantages-number">— №5 —</p>
-            <p class="advantages-paragraph advantages-dark">Большинство едет в Гранд<br>Каньон и толпится там</p>
-          </li>
-        </ol>
+        </ul>
       </section>
 
       <section class="hotel-search">
@@ -110,7 +120,6 @@
           гостиниц в Седоне</p>
         <a class="hotel-search-button" href="hotels.html">Поиск гостинницы в Седоне</a>
       </section>
-
       <section class="subscribe subscribe-index">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="subscribe-offer subscribe-white">Подпишитесь на рассылку</p>
@@ -123,7 +132,6 @@
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -148,9 +156,8 @@
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-logo" href="https://htmlacademy.ru/">
-          <img class="footer-logo-img" src="images/html-academy.svg" alt="Логотип академии html." width="115"
-            height="34">
-        </a>
+        <img class="footer-logo-img" src="images/html-academy.svg" alt="Логотип академии html." width="115" height="34">
+      </a>
     </footer>
   </div>
 </body>
