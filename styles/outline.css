@@ -18,7 +18,23 @@
 .navigation-user {
   outline: #0000ff solid 1px;
 }
-*/
+
 .hero {
   outline: 1px solid #ff0000;
 }
+.hotel-search {
+  outline: 1px solid #00ff00;
+}
+
+.hotel-search-title {
+  outline: 1px solid #0000ff;
+}
+
+.hotel-search-paragraph {
+  outline: 1px solid #0000ff;
+}
+
+.hotel-search-button {
+  outline: 1px solid #0000ff;
+}
+*/

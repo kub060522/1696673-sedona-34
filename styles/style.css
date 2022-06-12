@@ -109,7 +109,12 @@ body {
   color: #333333;
 }
 
-/* Текст main -> hotel-search файл index.html */
+/* hotel-search файл index.html */
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+}
 
 .hotel-search-title {
   font-weight: 700;
@@ -135,6 +140,8 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
+  width: 574px;
+  margin: auto;
 }
 
 /* Текст subscribe файлы index.html hotels.html */
