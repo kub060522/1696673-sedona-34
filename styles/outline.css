@@ -15,13 +15,28 @@
   outline: #00ff00 solid 1px;
 }
 
+.navigation-item {
+  outline: #0000ff solid 1px;
+}
+
+.navigation-link {
+  outline: 1px solid #ffd900;
+}
+
 .navigation-user {
   outline: #0000ff solid 1px;
+}
+*/
+/*
+.hero-welcome {
+  outline: 1px solid #571f8b;
 }
 
 .hero {
   outline: 1px solid #ff0000;
 }
+*/
+/*
 .hotel-search {
   outline: 1px solid #00ff00;
 }

@@ -30,6 +30,19 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -42,29 +55,6 @@ body {
 .main,
 .hotels {
   flex-grow: 1;
-}
-
-/* Текст в шапке index.html и hotels.html */
-
-.navigation-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: capitalize;
-  color: #000000;
-  text-decoration: none;
-}
-
-.navigation-button {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #756157;
 }
 
 /* Текст main -> advantages файл index.html */
@@ -82,6 +72,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin-bottom: 90px;
 }
 
 .advantages-title {
@@ -322,6 +313,14 @@ body {
   background-size: 100% auto;
   background-color: #ffffff;
   color: #000000;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin-bottom: 63px;
+}
+
+.hero-welcome {
+  display: block;
+  margin: 0 auto;
 }
 
 .subscribe-index {
@@ -340,6 +339,7 @@ body {
   color: #ffffff;
 }
 
+
 /* Сетка страниц */
 
 .navigation {
@@ -354,7 +354,21 @@ body {
 .navigation-site {
   margin: 0 auto 0 0;
   padding: 0;
-  width: 390px;
+  width: 517px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 20px 17px;
 }
 
 .navigation-user {
@@ -363,10 +377,23 @@ body {
   width: 264px;
 }
 
-.hero-welcome {
-  display: block;
-  margin: 0 auto;
+.navigation-user .navigation-link {
+  min-width: 19px;
+  min-height: 19px;
 }
+
+.navigation-button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
+
 
 .footer {
   display: flex;
