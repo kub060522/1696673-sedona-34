@@ -1,12 +1,13 @@
-/*
+
 .header {
-    outline: #1e2527 solid 1px;
+    outline: #1e2527 solid 2px;
 }
 
 .navigation {
   outline: #FF0000 solid 1px;
 }
 
+/*
 .navigation-logo {
   outline: #ffd900 solid 1px;
 }
@@ -53,3 +54,20 @@
   outline: 1px solid #0000ff;
 }
 */
+/*
+.footer {
+  outline: 2px solid #000000;
+}
+ */
+.footer-social-list {
+  outline: 2px solid #ff0000;
+}
+/*
+.footer-social-item {
+  outline: 2px solid #00b82e;
+}
+ */
+.footer-social-link {
+  outline: 2px solid #0235c2;
+  background-color: #0235c2;
+}
