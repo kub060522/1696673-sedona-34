@@ -15,7 +15,7 @@
         <img class="header-logo-img" src="images/logo.svg" alt="Логотип Седоны." width="139" height="70">
       </a>
       <nav class="navigation">
-        <ul class="navigation-site">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -26,7 +26,7 @@
             <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-site navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
@@ -40,16 +40,18 @@
       </nav>
     </header>
 
-    <main class="hotels">
+    <main class="page-hotels">
       <h1 class="visually-hidden">Гостиницы</h1>
 
       <section class="hotels-filter">
         <header class="hotels-filter-header">
-          <h2 class="hotels-filter-title">Гостинницы Седоны</h2>
+          <h2 class="hotels-filter-title">Гостиницы Седоны</h2>
           <nav class="breadcrumbs-nav">
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <a class="breadcrumbs-link" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
@@ -136,13 +138,19 @@
           </select>
           <ul class="sorting-list">
             <li class="sorting-item">
-              <a class="sorting-icon" href="#">Карточки</a>
+              <a class="sorting-icon" href="#">
+                <span class="visually-hidden">Карточки</span>
+              </a>
             </li>
             <li class="sorting-item">
-              <a class="sorting-icon" href="#">Экран</a>
+              <a class="sorting-icon" href="#">
+                <span class="visually-hidden">Экран</span>
+              </a>
             </li>
             <li class="sorting-item">
-              <a class="sorting-icon" href="#">Список</a>
+              <a class="sorting-icon" href="#">
+                <span class="visually-hidden">Список</span>
+              </a>
             </li>
           </ul>
         </section>
@@ -290,9 +298,8 @@
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-logo" href="https://htmlacademy.ru/">
-          <img class="footer-logo-img" src="images/html-academy.svg" alt="Логотип академии html." width="115"
-            height="34">
-        </a>
+        <img class="footer-logo-img" src="images/html-academy.svg" alt="Логотип академии html." width="115" height="34">
+      </a>
     </footer>
   </div>
 </body>
