@@ -363,6 +363,7 @@ body {
 .hotel-sorting {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 56px;
 }
 
 .catalog-result {
@@ -437,6 +438,16 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+}
+
+.show-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 66px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
 }
 
 .hotel-name {

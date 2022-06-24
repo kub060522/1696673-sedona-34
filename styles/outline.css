@@ -120,3 +120,8 @@
 .pagination-item {
   outline: 2px solid #8b008b;
 }
+
+.show-item {
+  outline: 1px solid #009ac0;
+  background-color: #d5ecfc;
+}
