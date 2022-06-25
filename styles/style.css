@@ -77,6 +77,7 @@ body {
   width: 517px;
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: space-around; */
 }
 
 .navigation-link {
@@ -99,6 +100,7 @@ body {
 .navigation-user .navigation-link {
   min-width: 19px;
   min-height: 19px;
+  /* padding: 0; */
 }
 
 .navigation-button {
@@ -559,9 +561,8 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 116px;
+  width: 142px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -569,8 +570,8 @@ body {
 }
 
 .footer-social-link {
-  width: 24px;
-  height: 17px;
+  width: 47px;
+  height: 40px;
   display: block;
 }
 
