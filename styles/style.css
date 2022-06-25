@@ -295,6 +295,21 @@ body {
   margin-bottom: 46px;
 }
 
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 600px 200px;
+  justify-content: center;
+  min-height: 60px;
+}
+
+.subscribe-input {
+  padding: 0;
+  padding-left: 22px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .subscribe-white {
   color: #ffffff;
 }
