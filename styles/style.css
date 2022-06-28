@@ -475,7 +475,7 @@ body {
   margin-bottom: 66px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  gap: 18px;
+  column-gap: 18px;
 }
 
 .hotel-name {
