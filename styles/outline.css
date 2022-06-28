@@ -129,8 +129,18 @@
 .pagination-item {
   outline: 2px solid #8b008b;
 }
-
+/*
 .show-item {
   outline: 1px solid #009ac0;
   background-color: #d5ecfc;
 }
+ */
+/*
+.show-item-link {
+  outline: 1px solid #808000;
+}
+
+.hotel-show-img {
+  outline: #8b008b solid 1px;
+}
+ */
