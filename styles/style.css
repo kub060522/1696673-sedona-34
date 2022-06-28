@@ -565,8 +565,9 @@ body {
 
 .pagination-link {
   display: block;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  padding-top: 11px;
+  padding-bottom: 13px;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -586,7 +587,22 @@ body {
 }
 
 .pagination-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #333333;
+  width: 386px;
+}
+
+.pagination-selected {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  width: 160px;
+  border: 0;
+  padding: 14px 20px;
 }
 
 .footer {
