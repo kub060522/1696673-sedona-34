@@ -109,11 +109,11 @@
   outline: 1px solid #ff8c00;
 }
 
-
+/*
 .hotel-sorting {
   outline: 1px solid #00ff00;
 }
-
+*/
 .sorting-item {
   outline: 2px solid #DC143C;
 }
@@ -121,14 +121,16 @@
 .breadcrumbs-item {
   outline: 2px solid #2f4f4f;
 }
-
+/*
 .hotel-pagination {
   outline: 2px solid #483d8b;
 }
-
+*/
+/*
 .pagination-item {
   outline: 2px solid #8b008b;
 }
+*/
 /*
 .show-item {
   outline: 1px solid #009ac0;

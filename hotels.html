@@ -62,8 +62,8 @@
 
         <section class="hotels-filter-selection">
           <h2 class="visually-hidden">Выбор гостиницы</h2>
-          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="form-fieldset">
+          <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="form-fieldset form-fieldset-infrastructure">
               <legend class="form-legend">Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -86,7 +86,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-fieldset">
+            <fieldset class="form-fieldset form-fieldset-type">
               <legend class="form-legend">Тип Жилья:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -109,12 +109,12 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-fieldset">
+            <fieldset class="form-fieldset form-fieldset-price">
               <legend class="form-legend price-legend">Стоимость, ₽:</legend>
               <input class="price-input" type="number" name="price-from" value="0">
               <input class="price-input" type="number" name="price-to" value="9000">
             </fieldset>
-            <fieldset class="form-fieldset">
+            <fieldset class="form-fieldset form-fieldset-button">
               <button class="filter-button button-submit" type="submit">Применить</button>
               <button class="filter-button button-reset" type="reset">Сбросить</button>
             </fieldset>
