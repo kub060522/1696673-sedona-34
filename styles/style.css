@@ -58,14 +58,14 @@ body {
 }
 
 .header-logo {
+  position: relative;
   margin-right: 30px;
   width: 139px;
-  position: relative;
 }
 
 .header-logo-img {
-  display: block;
   position: absolute;
+  z-index: 1;
 }
 
 .navigation {
@@ -83,6 +83,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -91,6 +92,17 @@ body {
   text-decoration: none;
   display: block;
   padding: 20px 17px 19px;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  top: 64px;
+  left: 17px;
+  right: 17px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .navigation-user {
@@ -102,14 +114,46 @@ body {
   align-items: center;
 }
 
-.navigation-link-user {
+.navigation-user-item:nth-child(2) {
+  margin-right: 20px;
+}
+
+.navigation-user-link {
   display: block;
   width: 42px;
   min-height: 65px;
 }
 
-.navigation-item-user:nth-child(2) {
-  margin-right: 20px;
+.navigation-user-item:nth-child(1) .navigation-user-link {
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user-item:nth-child(2) .navigation-user-link {
+  position: relative;
+  background-image: url(../images/favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user-item:nth-child(2) .navigation-user-link::after {
+  position: absolute;
+  width: 20px;
+  top: 15px;
+  right: -2px;
+  border-radius: 50%;
+  background-color: #7db54f;
+  content: "12";
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 4px;
 }
 
 .navigation-button {
@@ -121,10 +165,30 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #756157;
+  border: none;
   width: 160px;
   height: 37px;
   margin: 0;
+  cursor: pointer;
+}
+
+.search-button {
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #615048;
+}
+
+.search-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .page-main {
@@ -132,6 +196,7 @@ body {
 }
 
 .hero {
+  position: relative;
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -139,6 +204,15 @@ body {
   color: #000000;
   padding-top: 51px;
   padding-bottom: 82px;
+}
+
+.hero::after {
+  position: absolute;
+  background-image: url(../images/divider.svg);
+  content: "";
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
 }
 
 .hero-welcome {
@@ -277,9 +351,9 @@ body {
   text-decoration: none;
   width: 574px;
   margin: auto;
-  display: block;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-radius: 4px;
 }
 
 .subscribe {
@@ -563,10 +637,11 @@ body {
   padding-bottom: 8px;
 }
 
+/* 
 .hotel-show-brown {
   background-color: #756157;
 }
-
+ */
 .hotel-show-blue {
   background-color: #82b3d3;
 }
