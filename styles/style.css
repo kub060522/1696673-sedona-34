@@ -55,28 +55,29 @@ body {
 .page-header {
   display: flex;
   padding-left: 70px;
-  padding-right: 70px;
 }
 
 .header-logo {
-  display: block;
   margin-right: 30px;
+  width: 139px;
+  position: relative;
 }
 
 .header-logo-img {
   display: block;
+  position: absolute;
 }
 
 .navigation {
   width: 961px;
   display: flex;
-  justify-content: space-between;
 }
 
 .navigation-site {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -89,13 +90,14 @@ body {
   color: #000000;
   text-decoration: none;
   display: block;
-  padding: 20px 17px;
+  padding: 20px 17px 19px;
 }
 
 .navigation-user {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-right: 70px;
   display: flex;
   align-items: center;
 }
@@ -103,7 +105,7 @@ body {
 .navigation-link-user {
   display: block;
   width: 42px;
-  min-height: 66px;
+  min-height: 65px;
 }
 
 .navigation-item-user:nth-child(2) {
@@ -123,6 +125,10 @@ body {
   width: 160px;
   height: 37px;
   margin: 0;
+}
+
+.page-main {
+  flex-grow: 1;
 }
 
 .hero {
