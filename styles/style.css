@@ -443,6 +443,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 0 10px 10px 0;
+  cursor: pointer;
 }
 
 .button-subscribe-favotite,
@@ -492,20 +493,48 @@ body {
   padding: 0;
   display: flex;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
-  margin-right: 26px;
+  margin-right: 25px;
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  background-image: url(../images/breadcrubs-arrow.svg);
+  content: "";
+  display: block;
+  width: 5px;
+  height: 8px;
+  position: absolute;
+  top: 6px;
+  right: -15px;
+}
+
+.breadcrumbs-item:last-child:after {
+  content: none;
 }
 
 .breadcrumbs-link {
+  position: relative;
   min-height: 21px;
-  min-width: 21px;
+  min-width: 13px;
   display: block;
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
 }
+
+.breadcrubs-house {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 
 .form-filter {
   display: flex;
