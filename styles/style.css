@@ -514,7 +514,7 @@ body {
 .hotels-filter {
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #000000;
   color: #ffffff;
   padding: 35px 70px 70px 70px;
@@ -615,19 +615,75 @@ body {
   margin-right: 176px;
 }
 
+
+
 .form-legend {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .filter-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
+.filter-item {
+  margin-bottom: 15px;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  padding-left: 39px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infrastructure-input + .control-mark {
+  border-radius: 4px;
+}
+
+.infrastructure-input:checked + .control-mark::before {
+  position: absolute;
+  background: url(../images/checked.svg);
+  width: 13px;
+  height: 10px;
+  content: "";
+  left: 4px;
+  top: 5px;
+}
+
+.housing-input + .control-mark {
+  border-radius: 10px;
+}
+
+.housing-input:checked + .control-mark::before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: "";
+  left: 5px;
+  top: 5px;
+  background-color: #3f5e72;
+  border-radius: 5px;
+}
+
 
 .form-fieldset-price {
   width: 288px;
@@ -895,11 +951,8 @@ body {
 .footer {
   box-sizing: border-box;
   display: flex;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 45px 70px 30px;
   justify-content: space-between;
-  min-height: 120px;
-  padding-top: 45px;
 }
 
 .footer-social-list {
@@ -946,8 +999,6 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   display: block;
-  width: 720px;
-  height: 50px;
 }
 
 .footer-phone:hover,
