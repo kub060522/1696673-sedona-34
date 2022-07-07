@@ -63,6 +63,15 @@ body {
   width: 139px;
 }
 
+.header-logo[href="index.html"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.header-logo[href="index.html"]:active {
+  opacity: 0.3;
+}
+
 .header-logo-img {
   position: absolute;
   z-index: 1;
@@ -644,10 +653,15 @@ body {
   margin-bottom: 15px;
 }
 
+.filter-item:last-child {
+  margin-bottom: 0;
+}
+
 .control {
   position: relative;
   display: flex;
   padding-left: 39px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -689,6 +703,23 @@ body {
   border-radius: 5px;
 }
 
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.infrastructure-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.housing-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
+  background-color: #ffffff;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .form-fieldset-price {
   width: 288px;
@@ -833,6 +864,18 @@ body {
 
 .button-reset {
   font-weight: 400;
+}
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-reset:focus {
+  outline: 3px solid #82b3d3;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-catalog {
