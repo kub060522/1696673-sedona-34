@@ -108,7 +108,7 @@ body {
   color: #615048;
 }
 
-.navigation-link:active{
+.navigation-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -189,11 +189,10 @@ body {
   color: #ffffff;
   border: none;
   width: 160px;
-  height: 37px;
+  min-height: 37px;
   margin: 0;
   cursor: pointer;
 }
-
 .search-button {
   background-color: #756157;
   border-radius: 4px;
@@ -432,7 +431,7 @@ body {
 
 .subscribe-form {
   display: grid;
-  grid-template-columns: 600px 200px;
+  grid-template-columns: 600px auto;
   justify-content: center;
   min-height: 60px;
 }
@@ -475,6 +474,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  padding: 12px 35px;
   border: none;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
@@ -686,11 +686,11 @@ body {
   background-position: center;
 }
 
-.infrastructure-input + .control-mark {
+.infrastructure-input+.control-mark {
   border-radius: 4px;
 }
 
-.infrastructure-input:checked + .control-mark::before {
+.infrastructure-input:checked+.control-mark::before {
   position: absolute;
   background: url(../images/checked.svg);
   width: 13px;
@@ -700,11 +700,11 @@ body {
   top: 5px;
 }
 
-.housing-input + .control-mark {
+.housing-input+.control-mark {
   border-radius: 10px;
 }
 
-.housing-input:checked + .control-mark::before {
+.housing-input:checked+.control-mark::before {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -719,12 +719,12 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.infrastructure-input:focus + .control-mark {
+.infrastructure-input:focus+.control-mark {
   outline: 3px solid #83b3d3;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.housing-input:focus + .control-mark {
+.housing-input:focus+.control-mark {
   outline: 3px solid #83b3d3;
   background-color: #ffffff;
 }
@@ -788,6 +788,7 @@ body {
   border-right: none;
   border-radius: 4px 0 0 4px;
 }
+
 .price-input-max {
   border-radius: 0 4px 4px 0;
 }
@@ -849,7 +850,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 160px;
 }
 
 .filter-button {
@@ -861,13 +861,13 @@ body {
   color: #ffffff;
   background-color: inherit;
   border: none;
+  min-width: 160px;
 }
 
 .button-submit {
   font-weight: 700;
   text-transform: uppercase;
   background-color: #82b3d3;
-  width: 160px;
   min-height: 48px;
   margin-right: 1px;
   margin-bottom: 20px;
@@ -1216,7 +1216,7 @@ body {
 }
 
 .social-icon:active {
-  fill: rgba(104,162, 202, 0.3);
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone {
