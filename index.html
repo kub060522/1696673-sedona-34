@@ -222,26 +222,30 @@
             </div>
           </div>
           <span>На эти даты есть свободные номера. Пока есть.</span>
-          <div class="guests-wrapper">
-            <div class="adults-wrapper">
-              <label class="guests" for="adults">Взрослые:</label>
-              <button>
-                <span>Плюс.</span>
-              </button>
-              <input type="number" id="adults" name="adults-guests">
-              <button>
-                <span>Минус.</span>
-              </button>
+          <div class="guests-number">
+            <div class="adults-number">
+              <label class="guests-adults" for="adults">Взрослые:</label>
+              <div class="guests-number-block">
+                <button class="number-button-plus adults-plus" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
+                <input class="number-guests-input" type="number" id="adults" name="adults-guests">
+                <button class="number-button-minus adults-minus" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
+              </div>
             </div>
-            <div class="children-wrapper">
-              <label class="guests" for="children">Дети:</label>
-              <button>
-                <span>Плюс.</span>
-              </button>
-              <input type="number" id="children" name="children-guests">
-              <button>
-                <span>Минус.</span>
-              </button>
+            <div class="children-number">
+              <label class="guests-children" for="children">Дети:</label>
+              <div class="guests-number-block">
+                <button class="number-button-plus children-plus" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
+                <input class="number-guests-input" type="number" id="children" name="children-guests">
+                <button class="number-button-minus children-minus" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
+              </div>
             </div>
           </div>
           <button class="modal-search-button" type="submit">Найти</button>

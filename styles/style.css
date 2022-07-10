@@ -1327,7 +1327,8 @@ Modal window
 }
 
 .residence-time,
-.guests {
+.guests-adults,
+.guests-children {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1360,7 +1361,54 @@ Modal window
   background-position: center;
 }
 
-.guests-wrapper {
+.guests-number {
   display: flex;
   justify-content: space-between;
+}
+
+.adults-number {
+  display: flex;
+  align-items: center;
+}
+
+.children-number {
+  display: flex;
+  align-items: center;
+}
+
+.guests-number-block {
+  position: relative;
+}
+
+.number-button-plus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.number-guests-input {
+  padding: 0;
+  border: none;
+  width: 133px;
+  height: 50px;
+}
+
+.number-button-minus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../images/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
