@@ -195,12 +195,57 @@
   </div>
 
   <div class="modal-container modal-container-close">
-    <div class="modal">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
+    <div class="modal-search">
+      <button class="modal-button-close" type="button">
+        <span class="visually-hidden">Закрыть.</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="date-input arrival-date-input">
+            <label class="residence-time" for="arrival">Дата Заезда:</label>
+            <div class="date-input-block">
+              <input class="date-input-field" type="text" id="arrival" name="arrival-date">
+              <button class="calendar-button" type="button">
+                <span class="visually-hidden">Календарь.</span>
+              </button>  
+            </div>
+          </div>
+          <span>Мы не можем отправить вас в прошлое.</span>
+          <div class="date-input departure-date-input">
+            <label class="residence-time" for="departure">Дата Выезда:</label>
+            <div class="date-input-block">
+              <input class="date-input-field" type="text" id="departure" name="departure-date">
+              <button class="calendar-button" type="button">
+                <span class="visually-hidden">Календарь.</span>
+              </button>  
+            </div>
+          </div>
+          <span>На эти даты есть свободные номера. Пока есть.</span>
+          <div class="guests-wrapper">
+            <div class="adults-wrapper">
+              <label class="guests" for="adults">Взрослые:</label>
+              <button>
+                <span>Плюс.</span>
+              </button>
+              <input type="number" id="adults" name="adults-guests">
+              <button>
+                <span>Минус.</span>
+              </button>
+            </div>
+            <div class="children-wrapper">
+              <label class="guests" for="children">Дети:</label>
+              <button>
+                <span>Плюс.</span>
+              </button>
+              <input type="number" id="children" name="children-guests">
+              <button>
+                <span>Минус.</span>
+              </button>
+            </div>
+          </div>
+          <button class="modal-search-button" type="submit">Найти</button>
+        </form>
       </section>
     </div>
   </div>
