@@ -1339,6 +1339,7 @@ Modal window
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .residence-time,
@@ -1349,6 +1350,15 @@ Modal window
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+}
+
+.guests-adults {
+  margin-right: 64px;
+}
+
+.guests-children {
+  margin-right: 25px;
+  position: relative;
 }
 
 .date-input-block {
@@ -1410,16 +1420,19 @@ Modal window
   padding-left: 155px;
   color: #ff5757;
   font-size: 16px;
+  margin-bottom: 11px;
 }
 
 .message {
   padding-left: 155px;
   font-size: 16px;
+  margin-bottom: 11px;
 }
 
 .guests-number {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .adults-number {
@@ -1516,4 +1529,93 @@ Modal window
 .number-button-minus:active {
   border: 2px solid #000000;
   background-color: #ffffff;
+}
+
+.tooltip {
+  position: absolute;
+  top: 2px;
+  left: 55px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-button {
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: #83b3d3;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tooltip-button:hover {
+  background-color: #68a2ca;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 40px;
+  right: -116px;
+  display: block;
+  box-sizing: border-box;
+  width: 256px;
+  min-height: 143px;
+  padding: 15px 18px 18px 22px;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 10px;
+  display: none;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  top: -7px;
+  left: 120px;
+  width: 14px;
+  height: 14px;
+  background-color: #333333;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.tooltip-button:hover + .tooltip-text,
+.tooltip-button:focus + .tooltip-text {
+  display: block;
+}
+
+.modal-search-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #83b3d3;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-search-button:hover {
+  background-color: #68a2ca;
+}
+
+.modal-search-button:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
+}
+
+.modal-search-button:active {
+  background-color: #68a2ca;
+  opacity: 0.3;
 }
