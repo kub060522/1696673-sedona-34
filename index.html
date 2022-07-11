@@ -205,20 +205,22 @@
           <div class="date-input arrival-date-input">
             <label class="residence-time" for="arrival">Дата Заезда:</label>
             <div class="date-input-block">
-              <input class="date-input-field" type="text" id="arrival" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
+              <input class="date-input-field" type="text" id="arrival" name="arrival-date" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
               <button class="calendar-button" type="button">
                 <span class="visually-hidden">Календарь.</span>
-              </button>  
+              </button>
             </div>
           </div>
           <span class="message-error">Мы не можем отправить вас в прошлое.</span>
           <div class="date-input departure-date-input">
             <label class="residence-time" for="departure">Дата Выезда:</label>
             <div class="date-input-block">
-              <input class="date-input-field" type="text" id="departure" name="departure-date" value="1 сентября 2021" placeholder="Укажите дату" required>
+              <input class="date-input-field" type="text" id="departure" name="departure-date" value="1 сентября 2021"
+                placeholder="Укажите дату" required>
               <button class="calendar-button" type="button">
                 <span class="visually-hidden">Календарь.</span>
-              </button>  
+              </button>
             </div>
           </div>
           <span class="message">На эти даты есть свободные номера. Пока есть.</span>
@@ -229,19 +231,41 @@
                 <button class="number-button-plus adults-plus" type="button">
                   <span class="visually-hidden">Увеличить.</span>
                 </button>
-                <input class="number-guests-input" type="number" id="adults" name="adults-guests" value="2" min="1" step="1">
+                <input class="number-guests-input" type="number" id="adults" name="adults-guests" value="2" min="1"
+                  step="1">
                 <button class="number-button-minus adults-minus" type="button">
                   <span class="visually-hidden">Уменьшить.</span>
                 </button>
               </div>
             </div>
             <div class="children-number">
-              <label class="guests-children" for="children">Дети:</label>
+              <span class="guests-children">
+                <label class="guests-children" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
+                    <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_39785_734)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                        <path d="M1 0H0V1H1V0Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_39785_734">
+                          <rect width="1" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </span>
               <div class="guests-number-block">
                 <button class="number-button-plus children-plus" type="button">
                   <span class="visually-hidden">Увеличить.</span>
                 </button>
-                <input class="number-guests-input" type="number" id="children" name="children-guests" value="1" min="0" step="1">
+                <input class="number-guests-input" type="number" id="children" name="children-guests" value="1" min="0"
+                  step="1">
                 <button class="number-button-minus children-minus" type="button">
                   <span class="visually-hidden">Уменьшить.</span>
                 </button>
