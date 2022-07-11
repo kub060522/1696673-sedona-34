@@ -6,6 +6,8 @@
   <title>Sedona</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/outline.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32.png">
 </head>
 
 <body>
@@ -192,6 +194,90 @@
         </svg>
       </a>
     </footer>
+  </div>
+
+  <div class="modal-container modal-container-close">
+    <div class="modal-search">
+      <button class="modal-button-close" type="button">
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="date-input arrival-date-input">
+            <label class="residence-time" for="arrival">Дата Заезда:</label>
+            <div class="date-input-block">
+              <input class="date-input-field" type="text" id="arrival" name="arrival-date" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
+              <button class="calendar-button" type="button">
+                <span class="visually-hidden">Календарь.</span>
+              </button>
+            </div>
+          </div>
+          <span class="message-error">Мы не можем отправить вас в прошлое.</span>
+          <div class="date-input departure-date-input">
+            <label class="residence-time" for="departure">Дата Выезда:</label>
+            <div class="date-input-block">
+              <input class="date-input-field" type="text" id="departure" name="departure-date" value="1 сентября 2021"
+                placeholder="Укажите дату" required>
+              <button class="calendar-button" type="button">
+                <span class="visually-hidden">Календарь.</span>
+              </button>
+            </div>
+          </div>
+          <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+          <div class="guests-number">
+            <div class="adults-number">
+              <label class="guests-adults" for="adults">Взрослые:</label>
+              <div class="guests-number-block">
+                <button class="number-button-plus adults-plus" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
+                <input class="number-guests-input" type="number" id="adults" name="adults-guests" value="2" min="1"
+                  step="1">
+                <button class="number-button-minus adults-minus" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
+              </div>
+            </div>
+            <div class="children-number">
+              <span class="guests-children">
+                <label class="guests-children" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
+                    <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_39785_734)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                        <path d="M1 0H0V1H1V0Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_39785_734">
+                          <rect width="1" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </span>
+              <div class="guests-number-block">
+                <button class="number-button-plus children-plus" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
+                <input class="number-guests-input" type="number" id="children" name="children-guests" value="1" min="0"
+                  step="1">
+                <button class="number-button-minus children-minus" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="modal-search-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 
