@@ -1396,19 +1396,24 @@ Modal window
 }
 
 .date-input-field:focus {
-  box-shadow: 0 0 0 3px #83b3d3;
+  border: 3px solid #83b3d3;
   background-color: #e6e6e6;
   outline: none;
 }
 
 .date-input-field:active {
-  box-shadow: 0 0 0 2px #000000;
+  border: 2px solid #000000;
   background-color: #ffffff;
 }
 
 .message-error {
   padding-left: 155px;
   color: #ff5757;
+  font-size: 16px;
+}
+
+.message {
+  padding-left: 155px;
   font-size: 16px;
 }
 
@@ -1429,6 +1434,7 @@ Modal window
 
 .guests-number-block {
   display: flex;
+  background-color: #f2f2f2;
 }
 
 .number-button-plus {
@@ -1436,18 +1442,28 @@ Modal window
   height: 50px;
   border: none;
   cursor: pointer;
-  background-image: url(../images/plus.svg);
+  background-image: url(../images/minus.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  border-radius: 4px 0 0 4px;
+  opacity: 0.3;
 }
 
 .number-guests-input {
+  box-sizing: border-box;
   padding: 0;
   border: none;
   width: 33px;
   height: 50px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   appearance: textfield;
   text-align: center;
+  background-color: #f2f2f2;
 }
 
 .number-guests-input::-webkit-outer-spin-button,
@@ -1455,12 +1471,49 @@ Modal window
   appearance: none;
 }
 
+.number-guests-input:hover {
+  background-color: #e6e6e6;
+}
+
+.number-guests-input:focus {
+  border: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+.number-guests-input:active {
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
 .number-button-minus {
   width: 50px;
   height: 50px;
   border: none;
   cursor: pointer;
-  background-image: url(../images/minus.svg);
+  background-image: url(../images/plus.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  border-radius: 0 4px 4px 0;
+  opacity: 0.3;
+}
+
+.number-button-plus:hover,
+.number-button-minus:hover {
+  background-color: #e6e6e6;
+  opacity: 1;
+}
+
+.number-button-plus:focus,
+.number-button-minus:focus {
+  border: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+.number-button-plus:active,
+.number-button-minus:active {
+  border: 2px solid #000000;
+  background-color: #ffffff;
 }
